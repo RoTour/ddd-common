@@ -1,5 +1,3 @@
-// /Users/rotour/projects/back-to-react/src/domain/errors/DomainError.ts
-
 /**
  * Base class for all custom domain errors.
  *

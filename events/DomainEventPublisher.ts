@@ -1,7 +1,5 @@
-// /Users/rotour/projects/back-to-react/src/domain/events/DomainEventPublisher.ts
-
-import { IDomainEvent } from "../interfaces/IDomainEvent";
-import { IDomainEventListener } from "../interfaces/IDomainEventListener";
+import type { IDomainEvent } from "../interfaces/IDomainEvent";
+import type { IDomainEventListener } from "../interfaces/IDomainEventListener";
 
 class Publisher {
   private subscribers: IDomainEventListener[] = [];

@@ -1,4 +1,4 @@
-import { EntityId } from "./EntityId";
+import type { EntityId } from "./EntityId";
 
 export abstract class AggregateRoot<T extends EntityId> {
   public readonly id: T;
