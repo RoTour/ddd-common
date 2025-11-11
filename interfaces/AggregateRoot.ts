@@ -1,4 +1,4 @@
-import { IEntity } from '$lib/ddd/interfaces/Entity';
+import { IEntity } from '$lib/ddd/interfaces/IEntity';
 import type { EntityId } from './EntityId';
 import type { IDomainEvent } from './IDomainEvent';
 
