@@ -1,8 +1,18 @@
-// /Users/rotour/projects/mindforge/src/lib/ddd/interfaces/MessageQueue.interface.ts
-export type Job<T, O = undefined> = {
+// /Users/rotour/projects/mindforge/src/lib/ddd/interfaces/IMessageQueue.ts
+
+/**
+ * Generic options for a job that can be added to a queue.
+ * This provides an abstraction over implementation-specific options.
+ */
+export interface JobOptions {
+	delay?: number;
+	jobId?: string;
+}
+
+export type Job<T> = {
 	name: string;
 	data: T;
-	opts?: O;
+	opts?: JobOptions;
 };
 
 export interface IMessageQueue {
